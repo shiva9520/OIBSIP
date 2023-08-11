@@ -1,0 +1,255 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+header {
+    display: flex;
+    justify-content: space-between;
+    background-color: aqua;
+    border-radius: 40px;
+}
+
+header .name h1{
+    color: #fff;
+    font-size: 3.3vw;
+    font-weight: bold;
+}
+header .name h1::first-letter{
+    color: #252525;
+    font-size: 3.5vw;
+}
+
+nav{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+ul {
+    display: flex;
+    list-style: none;
+    justify-content: space-between;
+    gap: 8vh;
+    margin-right: 5vh;
+}
+
+ul li a {
+    text-decoration: none;
+    text-transform: uppercase;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: larger;
+    cursor: pointer;
+    color: white;
+    transition: 0.5s ease;
+}
+
+ul:hover li a {
+    color: black;
+}
+
+ul:hover li a:not(:hover) {
+    color: red;
+    opacity: 0.3;
+    filter: blur(2px);
+}
+
+::placeholder {
+    color: black;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    opacity: .9;
+    font-size: 27px;
+}
+
+.logo {
+    border-radius: 50px;
+    height: 50px;
+    width: 50px;
+    margin: 1.5px 0px 0px 0px;
+    transition: 0.5s ease;
+    filter: drop-shadow(8px 8px 10px black);
+}
+
+.logo:hover {
+    scale: 2;
+    margin: 5px;
+    z-index: 1;
+
+}
+
+.search {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow-x: hidden;
+    transition: 0.5s ease-in-out;
+}
+ 
+header input {
+    width: 50vh;
+    padding: 0px 50px;
+    border-radius: 50px;
+    border: hidden;
+    outline: none;
+    margin-left: 10vh;
+    background-color: white;
+    font-weight: bolder;
+    color: black;
+    font-size: 27px;
+}
+
+header input:hover {
+    background-color: white;
+    border-bottom: 3px solid black;
+}
+header input:focus{
+    color: #fff;
+    background-color: rgba(0, 0, 0, 0.378);
+}
+.section{
+    height: 50vh;
+    width: 100%;   
+    display: flex;
+    justify-content: center;             
+}
+.img1{
+    height: 50vh;
+    width: 100%;   
+    background:linear-gradient(-45deg,rgba(26, 26, 221,.5),rgba(25, 211, 211,.5));
+    display: flex;
+    justify-content: space-around; 
+    overflow: hidden;
+    
+}
+ 
+.img1 p{
+height: 100%;
+width: 50%;
+font-size: 2em;          
+}
+.img1 p::first-letter{
+    font-size: 64px;
+    font-family: 'Times New Roman', Times, serif;
+}
+.pic1{
+    height: auto;
+    width: 50%;
+    border-top-left-radius: 40px;
+    border-bottom-right-radius: 40px; 
+    filter: drop-shadow(8px 8px 10px white);
+    transition: 0.5s ease-out;
+}
+.pic1:hover{
+    opacity: .5;
+     
+}
+h3{
+    font-size: 20px;
+}
+
+.about{
+    height: 354px;
+    width: 100%;
+    background: linear-gradient(to right,rgb(101, 190, 219),rgb(99, 165, 99));
+    display: flex;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.about span{
+    margin-bottom: 35px;
+    font-size: 61px;
+    text-transform: uppercase;
+}
+
+.about span::after{
+    content: "";
+    display: block;
+    position: absolute;
+    height: 4px;
+    width: 217px;
+    background-color: white;
+    transform: scaleX(0);
+    transition: 0.3s ease;
+    transform-origin: left;
+}
+.about span:hover::after{
+    transform: scaleX(1);
+}
+ 
+.about p{
+    font-size: 27px;
+    height: 171px;
+    width: 71%;
+    color: white;
+}
+
+footer{
+    position: relative;
+    width: 100%;
+    background: #252525;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2px 0 31px;
+    flex-direction: column;
+}
+
+footer p{
+    font-size: 45px;
+    text-transform: uppercase;
+
+}
+
+footer p::after{
+    content: "";
+    display: block;
+    position: absolute;
+    height: 4px;
+    width: 190px;
+    background-color: Black;
+    transform: scaleX(0);
+    transition: 0.3s ease;
+    transform-origin: left;
+}
+footer p:hover::after{
+    transform: scaleX(1);
+}
+ 
+footer p{
+    font-size: 27px;
+    color: white;
+}
+.contact{
+    height: 252px;
+}
+
+.contact span{
+    font-size: 25px;   
+    color: aqua;
+}
+
+.contact input{
+    width: 570px;
+    height: 25px;
+    border:none;
+    outline:none;
+    font-size:1rem;
+    cursor: text;
+}
+
+ 
+button{
+    background-color: rgb(93, 175, 130);
+    padding: 10px;
+    box-shadow: 0px 0px 10px black;
+    color: black;
+    font-size: 1em;
+    text-transform: uppercase;
+}
+
+button:hover{
+    background-color: #252525;
+    color: white;
+}
